@@ -60,13 +60,11 @@ ul.items-list {
 	width: 200px;
 	display: inline-block;
 }
-/*
-.itemremove {
-	right: 10px;
-	position: absolute;
+
+.active {
+	color: black;
 }
 
-.itembought {
-	right: 50px;
-	position: absolute;
-} */
+.inactive {
+	color: lightgray;
+}
