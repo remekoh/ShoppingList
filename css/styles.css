@@ -21,19 +21,19 @@ header h1 {
 	text-align: center;
 }
 
-.addcontent {
+.add-content {
 	padding-top: 25px;
 	padding-bottom: 10px;
 }
 
-.addcontent h3 {
+.add-content h3 {
 	display: inline-block;
 	margin: 0 auto;
 	font-weight: 400;
 	/* padding-top: 5px; */
 }
 
-.addcontent > .additems {
+.add-content > .add-items {
 	border-style: none none dashed;
 	border-bottom: 1px dashed gray;
 	width: 400px;
@@ -41,22 +41,22 @@ header h1 {
 	font-size: 1em;
 }
 
-.fa:last-child {
+/* .fa:last-child {
 	margin-right: -25px;
-}
+} */
 
-ul.itemslist {
+ul.items-list {
 	max-width: 500px;
 	margin: 1em auto;
 	padding: 3em;
 }
 
-.itemslist li {
+.items-list li {
 	list-style: none;
 	border-bottom: 1px solid gray;
 }
 
-.itemslist li span {
+.items-list li span {
 	width: 200px;
 	display: inline-block;
 }
