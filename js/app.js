@@ -4,7 +4,7 @@ $(document).ready(function() {
 		if(event.keyCode == 13){
     	var item = $('.add-items').val();
     	if (item !== "") {
-				var text ='<li class="active-items"><span>'+item+'</span> <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
+				var text ='<li class="active items"><span>'+item+'</span> <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
 				$('.items-list').append(text);
 				$('.add-items').val('');
 			}
@@ -15,7 +15,7 @@ $(document).ready(function() {
 	$('#item-submit').on('click', function(){
 		var item = $('.add-items').val();
 		if (item !== "") {
-			var text ='<li class="active-items"><span>'+item+'</span> <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
+			var text ='<li class="active items"><span>'+item+'</span> <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
 			$('.items-list').append(text);
 			$('.add-items').val('');
 		}

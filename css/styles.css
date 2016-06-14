@@ -65,6 +65,15 @@ ul.items-list {
 	color: black;
 }
 
-.inactive {
+/* .inactive {
+	color: lightgray;
+} */
+
+.inactive > span {
+	text-decoration: line-through;
 	color: lightgray;
 }
+
+
+
+
