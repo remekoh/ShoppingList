@@ -4,7 +4,7 @@ $(document).ready(function() {
 		if(event.keyCode == 13){
     	var item = $('.add-items').val();
     	if (item !== "") {
-				var text ='<li class="active items"><span>'+item+'</span> <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
+				var text ='<li class="active items"><span>'+item+'</span> <i class="fa fa-square-o" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
 				$('.items-list').append(text);
 				$('.add-items').val('');
 			}
@@ -15,29 +15,25 @@ $(document).ready(function() {
 	$('#item-submit').on('click', function(){
 		var item = $('.add-items').val();
 		if (item !== "") {
-			var text ='<li class="active items"><span>'+item+'</span> <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
+			var text ='<li class="active items"><span>'+item+'</span> <i class="fa fa-square-o" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></li>'
 			$('.items-list').append(text);
 			$('.add-items').val('');
 		}
 	});
 
-	// checking off bought items
- 	$('.items-list').on('click', '.fa-check-square', function(){
- 		if ($(this).parent().hasClass(".active")) {
+	// checking off bought items - changes classes from active to inactive
+	// changes empty box to checked box
+ 	$('.items-list').on('click', '.fa-square-o', function() {
  			$(this).closest('.items').toggleClass('active inactive');
- 		} else {
- 			$(this).closest('.items').toggleClass('inactive active');
- 		}
+ 			$(this).toggleClass('fa-square-o fa-check-square');
  	});
 
- // 	$('.items-list').on('click', '.fa-check-square', function(){
-	// $(this).closest('.active-items').toggleClass('active-items inactive-items');
- // 	});
-
- // $('.items-list').on('click', '.fa-check-square', function() {
- // 	$(this).closest('li.items').removeClass('active');
- // 	$(this).closest('li.items').addClass('inactive');
- // });
+	// changes classes from inactive to active
+	// changes checked box to unchecked box
+ 	$('.items-list').on('click', '.fa-check-square', function() {
+ 			$(this).closest('.items').toggleClass('inactive active');
+ 			$(this).toggleClass('fa-check-square fa-square-o');
+ 	});
 
  	// removes items by clicking the trash icon
  	$('.items-list').on('click', '.fa-trash', function () {
