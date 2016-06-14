@@ -1,0 +1,72 @@
+* {
+	font-family: Open-Sans, sans-serif;
+	/*border: 1px solid red;*/
+}
+
+body {
+	margin: 0 auto;
+}
+
+header {
+	border-bottom: 1px solid gray;
+	width: 100%;
+}
+
+header h1 {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.list {
+	text-align: center;
+}
+
+.addcontent {
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+
+.addcontent h3 {
+	display: inline-block;
+	margin: 0 auto;
+	font-weight: 400;
+	/* padding-top: 5px; */
+}
+
+.addcontent > .additems {
+	border-style: none none dashed;
+	border-bottom: 1px dashed gray;
+	width: 400px;
+	text-align: center;
+	font-size: 1em;
+}
+
+.fa:last-child {
+	margin-right: -25px;
+}
+
+ul.itemslist {
+	max-width: 500px;
+	margin: 1em auto;
+	padding: 3em;
+}
+
+.itemslist li {
+	list-style: none;
+	border-bottom: 1px solid gray;
+}
+
+.itemslist li span {
+	width: 200px;
+	display: inline-block;
+}
+/*
+.itemremove {
+	right: 10px;
+	position: absolute;
+}
+
+.itembought {
+	right: 50px;
+	position: absolute;
+} */
