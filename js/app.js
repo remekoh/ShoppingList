@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//add items with enter button
-	$(document).keyup(function(event){
+	$('.add-items').keyup(function(event){
 		if(event.keyCode == 13){
     	var item = $('.add-items').val();
     	if (item !== "") {
@@ -36,7 +36,7 @@ $(document).ready(function() {
  	});
 
  	// removes items by clicking the trash icon
- 	$('.items-list').on('click', '.fa-trash', function () {
+ 	$('.items-list').on('click', '.fa-trash', function() {
  		$(this).closest('li').remove();
  	});
 });
